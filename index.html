@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Cards - JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="flashcards-container">
+    <header class="app-header">
+      <h1 class="app-title">Flash Cards</h1>
+      
+      <!-- Progress Bar Section -->
+      <div class="progress-section">
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <span class="progress-percentage" id="progressPercentage">0%</span>
+        <span class="progress-counter" id="progressCounter">0 of 0</span>
+      </div>
+    </header>
+
+    <!-- Flashcard Card Container -->
+    <div class="card-wrapper" id="cardWrapper" tabindex="0" role="button" aria-label="Voltear tarjeta">
+      <div class="card-inner" id="cardInner">
+        <!-- Front Side (Question) -->
+        <div class="card-face card-front">
+          <p class="card-text" id="questionText">Cargando pregunta...</p>
+        </div>
+        <!-- Back Side (Answer) -->
+        <div class="card-face card-back">
+          <p class="card-text" id="answerText">Cargando respuesta...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <footer class="card-controls">
+      <button class="nav-btn" id="prevBtn" type="button">
+        &lt; Previous
+      </button>
+      
+      <button class="action-btn" id="flipBtn" type="button">
+        Show Answer
+      </button>
+
+      <button class="nav-btn" id="nextBtn" type="button">
+        Next &gt;
+      </button>
+    </footer>
+  </main>
+
+  <script src="js/scrip.js"></script>
+</body>
+</html>
